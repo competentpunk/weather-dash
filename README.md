@@ -27,7 +27,9 @@ https://competentpunk.github.io/weather-dash/
 
 This app shows the current weather
 
-![Template screenshot](./assets/imgs/Screenshot-1.png)
+![Template screenshot](./assets/imgs/wireframe-1.png)
+![Template screenshot](./assets/imgs/screenshot-1.png)
+![Template screenshot](./assets/imgs/screenshot-2.png)
 
 ## License
 

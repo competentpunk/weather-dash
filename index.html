@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    <header>
-        <h1>
 
-        </h1>Welcome to your Weather Dash!
+<body>
+    <header class="col-12">
+        <h1>Welcome to your Weather Dash!</h1>
     </header>
-    
+    <section class="col-10">
+        <section class="search">
+            <div class="search-box">
+                <h2>Search for a city:</h2>
+                <form>Type location here</form>
+                <button>Search</button>
+            </div>
+            <div class="search-results">
+                <button class="result">Atlanta</button>
+                <button class="result">Los Angeles</button>
+                <button class="result">Baltimore</button>
+            </div>
+        </section>
+        <section class="forcast">
+            <div class="current">
+                <h2>Atlanta (3/7/2023)</h2>
+                <icon class="current-icon"></icon>
+                <div class="current-temp">Temp: 90.0˚ F</div>
+                <div class="current-wind"> Wind: 8.43 MPH</div>
+                <div class="current-humid">Humidity: 91%</div>
+            </div>
+            <div class="5-day">
+                <div class="day-1">
+                    <h2 class="date">Atlanta (3/8/2023)</h2>
+                    <icon class="icon-1"></icon>
+                    <div class="current-temp">Temp: 90.0˚ F</div>
+                    <div class="current-wind"> Wind: 8.43 MPH</div>
+                    <div class="current-humid">Humidity: 91%</div>
+                </div>
+                <div class="day-2">
+                    <h2 class="date">(3/9/2023)</h2>
+                    <icon class="icon-1"></icon>
+                    <div class="current-temp">Temp: 90.0˚ F</div>
+                    <div class="current-wind"> Wind: 8.43 MPH</div>
+                    <div class="current-humid">Humidity: 91%</div>
+                </div>
+                <div class="day-3">
+                    <h2 clss="date">(3/10/2023)</h2>
+                    <icon class="icon-1"></icon>
+                    <div class="current-temp">Temp: 90.0˚ F</div>
+                    <div class="current-wind"> Wind: 8.43 MPH</div>
+                    <div class="current-humid">Humidity: 91%</div>
+                </div>
+                <div class="day-4">
+                    <h2 class="date">(3/11/2023)</h2>
+                    <icon class="icon-1"></icon>
+                    <div class="current-temp">Temp: 90.0˚ F</div>
+                    <div class="current-wind"> Wind: 8.43 MPH</div>
+                    <div class="current-humid">Humidity: 91%</div>
+                </div>
+                <div class="day-5">
+                    <h2 class="date">(3/12/2023)</h2>
+                    <icon class="icon-1"></icon>
+                    <div class="current-temp">Temp: 90.0˚ F</div>
+                    <div class="current-wind"> Wind: 8.43 MPH</div>
+                    <div class="current-humid">Humidity: 91%</div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <footer>weather-dash</footer>
+
 </body>
+
 </html>
