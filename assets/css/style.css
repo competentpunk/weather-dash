@@ -1,6 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -55,4 +58,7 @@ footer {
     color: #ffffff;
     background-color: #025f74;
     padding: 20px;
+    position: fixed; 
+    bottom: 0px; 
+    left: 0px; 
 }
