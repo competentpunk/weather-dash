@@ -20,10 +20,57 @@
 // WHEN I click on a city in the search history
 // THEN I am again presented with current and future conditions for that city
 
-// API link 
-// https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={b4baa4ee379f57320fa20816d25e66c0}
-
 // API Key
-// b4baa4ee379f57320fa20816d25e66c0
+var apiKey = "b4baa4ee379f57320fa20816d25e66c0";
+
+var getCurrentDay = function (city) {
+    var currentDayUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+    var testUrl = "https://api.openweathermap.org/data/2.5/weather?q=Houston&appid=b4baa4ee379f57320fa20816d25e66c0"
+    fetch(testUrl).then(function (response) {
+        if(response.ok) {
+        return response.json().then(function (data) {
+            console.log(data);
+            // call function to display data
+        });
+    } else {
+        alert(reponse.statusText)
+    }
+});
+};
+
+getCurrentDay();
+
+var getForecast = function (city) {
+    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + apiKey;
+    var testUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Atlanta&appid=b4baa4ee379f57320fa20816d25e66c0"
+    fetch(testUrl).then(function (response) {
+        if(response.ok) {
+        return response.json().then(function (data) {
+            console.log(data);
+            // call function to display data
+        });
+    } else {
+        alert(reponse.statusText)
+    }
+});
+};
+
+getForecast();
+
+// data.list[0].main.temp
+// data.list[9].main.temp
+// repeat for wind, humidity, etc.
+// five numbers for five days: 0,9,17,25,33
+
+//get current weather API
+// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={b4baa4ee379f57320fa20816d25e66c0}
+
+// Lat and Lon API link 
+// https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={b4baa4ee379f57320fa20816d25e66c0}
+
+// forecast API
+// https://api.openweathermap.org/data/2.5/forecast?q={city name}&appid={b4baa4ee379f57320fa20816d25e66c0}
+
+
 
 
